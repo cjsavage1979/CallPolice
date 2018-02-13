@@ -1,0 +1,59 @@
+﻿@model CallPolice.Models.Users
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Users</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserCellPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserCellPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserPwd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserPwd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserRelative)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserRelative)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UserId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
